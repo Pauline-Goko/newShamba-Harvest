@@ -1,20 +1,103 @@
+body{
+  color: rgb(238, 232, 232);
+ 
+  
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+
+}
+.logo {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  margin-right: 10px;
+  color: #fff;
+}
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.menu li {
+  margin-right: 15px;
+}
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    padding: 10px;
+  }
+  .menu li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .menu li:last-child {
+    margin-bottom: 0;
+  }
+  .menu li a {
+    color: #fff;
+  }
+  input[type="checkbox"]:checked + .menu {
+    display: flex;
+  }
+}
+
+
 .logo{
     width: 100px;
     margin-left: 6%;
+    margin-top: 0.9%;
 }
 
 .nav{
     display: flex;
     margin-top: 2%;
-    
+    background-color: whitesmoke;
+}
+
+#Home{
+  background-color: rgb(179, 174, 109);
+  margin-left: -5%;
+  margin-right: -4.3%;
+  margin-top: -3%;
 }
 
 .nav p{
     padding-left: 180px;
     font-weight: bold;
-    margin-top: 4.5%;
-    
+    margin-top: 6%;
+
 }
+
+
 
 .nav p a{
     color: black;
@@ -41,7 +124,7 @@
  }
 
  #fresh{
-    color: green;
+    color: rgb(110, 100, 5);
     font-weight: bold;
 }
 
@@ -57,13 +140,15 @@
 #button1{
     width: 160px;
     height: 50px;
-    background-color: rgb(17, 126, 17);
+    background-color: rgb(155, 187, 11);
     color: black;
     font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border-radius: 30px;
     font-size: 0.5em;
     border-color: black;
+    border: none;
+    margin-top: 10%;
     
 }
 
@@ -73,17 +158,16 @@
 }
 
 #shamba{
-    color: rgb(16, 173, 16);
+    color: rgb(6, 51, 10);
 }
 
-body{
-    background-image: linear-gradient(to right, rgb(235, 219, 219),rgb(111, 235, 111));
-}
+
 
 /* Media Query for Phones */
 @media only screen and (max-width: 600px) {
     .logo {
-        width: 80px;
+        width: 70px;
+        margin-left: 40%;
     }
     
     .nav {
@@ -94,6 +178,7 @@ body{
     .nav p {
         padding-left: 0;
         margin-top: 10px;
+        margin-left: 40%;
     }
     
     .welcome {
@@ -161,6 +246,8 @@ body{
         font-size: 0.45em;
     }
 }
+
+
 /* style for Apiu */
 
 
@@ -172,9 +259,9 @@ body{
 
 #delivery{
     border-style: hidden;
-    width: 180px;
-    height: 170px;
-    background-color: rgb(226, 219, 88);
+    width: 250px;
+    height: 190px;
+    background-color: rgb(29, 20, 28);
     border-radius: 6%;
     transition: background-color 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
 }
@@ -183,32 +270,34 @@ body{
 .fast{
     display: grid;
     grid-template-columns: repeat(3,3fr);
-    margin-left: 150px;
+    margin-left: 6%;
 }
 
 #track{
-    width: 50px;
-    margin-left: 30%;
+    width: 140px;
+    margin-left: 20%;
+    color: white;
 }
 #clock{
-    width: 50px;
+    width: 100px;
     margin-top: 11%;
     padding-bottom: 25px;
-    margin-left: 35%;
+    margin-left: 30%;
 }
 #support{
-    width: 40px;
+    width: 70px;
     margin-top: 10%;
     padding-bottom: 25px;
-    margin-left: 39%;
+    margin-left: 30%;
 }
 #delivery:hover{
-    background-color: #0a521c;
+    background-color: #036d1e;
   opacity: 0.8;
   color: white;
 }
 #delivery h4{
     text-align: center;
+    font-size: 1.2em;
 }
 
 
@@ -267,11 +356,13 @@ body{
     margin-left: 20px;
     margin-top: 60px;
 }
-#image{
+#image101{
     border-radius: 30px;
+    
+
 }
 body{
-    background-image: linear-gradient(to right, rgb(232, 240, 232), rgb(148, 230, 148));
+    background-color:rgb(182, 136, 21);
     margin-right: 4%;
     margin-left: 4%;
 
@@ -283,7 +374,7 @@ body{
     margin: 20px;
     font-size: 1.2em;
 }
-#image2{
+#image66{
     border-radius: 30px;
 }
 
@@ -522,7 +613,8 @@ body{
 
 
   .main{
-    background-image: linear-gradient(to right, rgb(232, 240, 232), rgb(148, 230, 148));
+    
+   
      /* overflow-x: hidden; */
    }
    #product{
@@ -535,27 +627,31 @@ body{
    }
    .image1{
       display: grid;
-      grid-template-columns: repeat(2,2fr);
-      margin-left: 6%;
+      grid-template-columns: repeat(1,2fr);
+      margin-right: 6%;
    }
    #b{
-    width: 500px;
+    width: 380px;
        border-radius: 15px;
        filter: drop-shadow(8px 8px 4px  #201F1C);
+       margin-left: 2%;
    }
    #harvest{
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-weight: 540;
+    margin-top: 3%;
+    
    }
 
    #button123{
     margin-left : 45%;
-    width: 150px;
+    width: 170px;
     height: 45px;
     border-radius: 30px;
-    background-color: green;
+    background-color: rgb(23, 231, 23);
     font-weight: bold;
-    border-color: black;
+  border: none;
+    margin-bottom: 5%;
 }
 #button123 a{
     color: black;
@@ -633,11 +729,23 @@ body{
   width: 300px;
   height: 300px;
   border-style: hidden;
-  background-color: rgb(140, 202, 134);
+  background-color: rgb(29, 20, 28);
   border-radius: 10%;
+  transition: transform 0.3s ease;
+  
+}
+
+#div1:hover{
+  background-color:#036d1e ;
+  
+  
 }
 #div1 p{
   text-align: center;
+  color: white; 
+  font-size: 20px; 
+  text-align: center;
+  margin-top: 3%;
 }
 #image2{
   width: 190px;
@@ -663,6 +771,7 @@ body{
 .reviews{
   display: grid;
   grid-template-columns: repeat(3,3fr);
+
 
 }
 #reviews2{
@@ -697,6 +806,11 @@ body{
     margin-left: auto;
     margin-right: auto;
     margin-top: 2%;
+  }
+
+  body{
+    width: auto;
+    height: auto;
   }
   
   .reviews,
