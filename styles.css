@@ -237,7 +237,7 @@ body{
   /* Tablets */
   @media only screen and (min-width: 481px) and (max-width: 1024px) {
     #delivery {
-      width: 250px;
+      width: 230px;
       height: 200px;
     }
     
