@@ -257,6 +257,266 @@ body{
     }
   }
 
+  /* styling for about us by Alice */
+
+  
+  .about{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 20px;
+    margin-top: 60px;
+}
+#image{
+    border-radius: 30px;
+}
+body{
+    background-image: linear-gradient(to right, rgb(232, 240, 232), rgb(148, 230, 148));
+    margin-right: 4%;
+    margin-left: 4%;
+
+}
+.vision{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px;
+    font-size: 1.2em;
+}
+#image2{
+    border-radius: 30px;
+}
+
+#words{
+
+    margin-left: 4%;
+    font-size: 1.2em;
+}
+
+.vision h3{
+    font-size: 1.8em;
+}
+
+#head{
+    text-align: center;
+    font-size: 2.3em;
+}
+@media (max-width: 800px){
+    *{
+    
+        font-size: 15px;
+
+    }
+    #image{
+        border-radius: 10px;
+        width:auto;
+        height: auto;
+    }
+    #words{
+        
+        position: relative;
+   
+    }
+}
+
+
+@media only screen and (max-width: 375px) {
+    
+    
+    .about {
+      grid-template-columns: 1fr;
+      margin-left: 10px;
+      margin-top: 40px;
+    }
+    
+    #image {
+      border-radius: 20px;
+    }
+    
+    .vision {
+      grid-template-columns: 1fr;
+      margin: 10px;
+      font-size: 1em;
+    }
+    
+    #image2 {
+      border-radius: 20px;
+    }
+    
+    #words {
+      margin-left: 10px;
+      font-size: 1em;
+    }
+    
+    .vision h3 {
+      font-size: 1.5em;
+    }
+    
+    #head {
+      font-size: 2em;
+    }
+  }
+  
+  @media (max-width: 800px) {
+
+    
+    .about {
+     display: grid;
+     grid-template-columns: repeat(1,2fr);
+      margin-left: 10px;
+      margin-top: 40px;
+    }
+    
+    #image {
+      border-radius: 20px;
+    }
+    
+    .vision {
+      grid-template-columns: 1fr;
+      margin: 10px;
+      font-size: 1em;
+    }
+    
+    #image2 {
+      border-radius: 20px;
+    }
+    
+    #words {
+      margin-left: 10px;
+      font-size: 1em;
+    }
+    
+    .vision h3 {
+      font-size: 1.5em;
+    }
+    
+    #head {
+      font-size: 2em;
+    }
+  }
+
+  
+  @media only screen and (min-width: 800px) and (max-width: 1100px) {
+
+    
+    body {
+      font-size: 16px;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .about{
+      display: grid;
+      grid-template-columns: repeat(1,2fr);
+    }
+    #image{
+      width: 100%;
+      margin-right: -20px;
+    }
+    #image2{
+      width: 100%;
+      
+    }
+    #words{
+      margin-left: -10px;
+    }
+    .vision{
+      display: grid;
+      grid-template-columns: repeat(1,2fr);
+
+    }
+    
+  }
+
+
+
+
+  @media (max-width: 768px) {
+    .about {
+      grid-template-columns: 1fr;
+      margin-left: 0;
+    }
+  
+    #image {
+      border-radius: 0;
+    }
+  
+    body {
+      background-image: none;
+      margin-right: 0;
+      margin-left: 0;
+    }
+  
+    .vision {
+      grid-template-columns: 1fr;
+      margin: 0;
+    }
+  
+    #image2 {
+      border-radius: 0;
+    }
+  
+    #words {
+      margin-left: 0;
+    }
+  
+    .vision h3 {
+      font-size: 1.5em;
+    }
+  
+    #head {
+      text-align: left;
+      font-size: 1.8em;
+    }
+  }
+  
+
+  @media (max-width: 768px) {
+    .about {
+      grid-template-columns: 1fr;
+      margin-left: 0;
+    }
+  
+    #image {
+      border-radius: 0;
+      width: 100%;
+      height: auto;
+    }
+  
+    body {
+      background-image: none;
+      margin-right: 0;
+      margin-left: 0;
+    }
+  
+    .vision {
+      grid-template-columns: 1fr;
+      margin: 0;
+    }
+  
+    #image2 {
+      border-radius: 0;
+      width: 100%;
+      height: auto;
+    }
+  
+    #words {
+      margin-left: 0;
+    }
+  
+    .vision h3 {
+      font-size: 1.5em;
+    }
+  
+    #head {
+      text-align: left;
+      font-size: 1.8em;
+    }
+  }
+  
+
 
   /* styling for product page by lado */
 
