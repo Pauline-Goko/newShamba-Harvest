@@ -272,8 +272,8 @@ body{
 }
 body{
     background-image: linear-gradient(to right, rgb(232, 240, 232), rgb(148, 230, 148));
-    margin-right: 4%;
-    margin-left: 4%;
+    /* margin-right: 4%;
+    margin-left: 4%; */
 
 }
 .vision{
@@ -283,7 +283,7 @@ body{
     margin: 20px;
     font-size: 1.2em;
 }
-#image2{
+#image66{
     border-radius: 30px;
 }
 
@@ -663,11 +663,13 @@ body{
 .reviews{
   display: grid;
   grid-template-columns: repeat(3,3fr);
+  margin-left: 6%;
 
 }
 #reviews2{
   display: grid;
   grid-template-columns: repeat(3,3fr);
+  margin-left: 6%;
 
 }
 #what{
@@ -724,6 +726,94 @@ body{
     align-items: center;
   } 
 }
+
+
+
+/* footer styling  */
+
+
+
+.footer{
+    background-color: rgb(90, 197, 90);
+    display: grid;
+    grid-template-columns: repeat(3,3fr);
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    width: 100%;
+    color: black;
+    gap: 380px;
+}
+#socials{
+    /* padding-top: 110px;
+    /* padding-left: 30px; */
+    /* position: relative; */
+    margin-left: 74%;
+    width: 70px;
+    
+}
+.image{
+    width: 12%;
+    position: absolute;
+    top: 22px;
+}
+ a{
+    text-decoration: none;
+    color: black;
+}
+.go{
+  width: 70%;
+}
+
+@media (max-width: 768px) {
+    *{
+        overflow: hidden;
+
+    }
+    .footer {
+      grid-template-columns: repeat(3, 1fr);
+      margin-left: -2%;
+      gap: -9px;
+      padding-left: 10px;
+
+    }
+  
+    .image {
+      width: 15%;
+      max-width: 40px;
+    }
+    #socials{
+        padding-top: 110px;
+        padding-left: 0;
+        position: relative;
+    }
+  }
+  @media (max-width: 480px) {
+   *{
+    overflow-x: hidden;
+   }
+    .footer {
+      grid-template-columns: 1fr;
+      margin-left: -0.5%;
+      padding-left: 10px;
+
+
+    }
+  
+    #socials {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    .image {
+      width: 20%;
+      max-width: 30px;
+    }
+    #socials{
+        padding-top: 0px;
+        padding-left: 30px;
+        position: relative;
+    }
+  }  
 
 
 
